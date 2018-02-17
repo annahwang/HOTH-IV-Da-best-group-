@@ -1,0 +1,45 @@
+<!--HTML for user input fields-->
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Calling Bootstrap-->
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- linking to css file-->
+<link rel="stylesheet" href="userInputFormatting.css">
+</head>
+
+
+<body>
+
+<h3>Basic information!</h3>
+
+<div>
+
+  <!--User Input Fields-->
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="ename" name="email" placeholder="Your email..">
+
+    <label for="year">Year</label>
+    <select id="year" name="year">
+      <option value="upper">Upperclassman (3rd,4th,5th Year)</option>
+      <option value="under">Underclassman (1st, 2nd Year)</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
