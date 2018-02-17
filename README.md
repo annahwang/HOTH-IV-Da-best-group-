@@ -1,0 +1,1 @@
+Connects students in the same class who want to form study groups.
