@@ -189,6 +189,7 @@
     }
   }
   </style>
+<style rel="stylesheet" href="main.css"></style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -210,7 +211,6 @@
     </div>
   </div>
 </nav>
-
   <div class="jumbotron text-center">
     <h1>CLASSMEET</h1>
     <p>Form study groups with your fellow Bruins</p>
@@ -271,13 +271,121 @@
                 <button type="button" class="btn btn-danger">Search</button>
               </div>
          </div>
+  <div class="jumbotron text-center" id="fun">
+    <h1>CLASSMEET</h1>
+    <p>Form study groups with your fellow Bruins</p>
+  </div> 
+    
+    <form>
+      
+<div class="row">
+        <!--First Name-->
+   <div class="col-lg-6 col-lg-offset-2">
+        <div class="input-group" style="align-items:center">
+            <div class="input-group-prepend">
+            <span text-align= "center" class="input-group-text" id="">First Name</span>
+            </div>
+      <input type="text" class="form-control" size="50" placeholder="First Name" required>
+        </div>
+
+
+      <!--Last Name-->
+      
+         <div class="input-group" style="align-items:center">
+            <div class="input-group-prepend">
+          <span text-align= "center" class="input-group-text" id="">Last Name</span>
+            </div>
+    <input type="text" class="form-control" size="50" placeholder="Last Name" required>
+         </div>
+
+
+    <!--Email-->
+    
+  <div class="jumbotron text-center">
+    <h1>CLASSMEET</h1>
+    <p>Form study groups with your fellow Bruins</p>
+    <form>
+      <div class="row">
+
+        <!--First Name-->
+        <div class="col-lg-4 col-lg-offset-4">
+        <div class="input-group" style="align-items:center">
+            <div class="input-group-prepend">
+            <span text-align= "center" class="input-group-text" id="">First Name</span>
+        </div>
+        </div>
+      <input type="text" class="form-control" size="50" placeholder="First Name" required>
+      </div>
+
+
+      <!--Last Name-->
+      <div class="col-lg-4 col-lg-offset-4">
+      <div class="input-group" style="align-items:center">
+          <div class="input-group-prepend">
+          <span text-align= "center" class="input-group-text" id="">Last Name</span>
+           </div>
+      </div>
+    <input type="text" class="form-control" size="50" placeholder="Last Name" required>
+    </div>
+
+
+  </div>
+  </form>
+    <!--Email-->
+    <div class="col-lg-4 col-lg-offset-4">
+
+   <input type="text" class="form-control" size="50" placeholder="Email" required>
+         </div>
+  
+    <!--Class-->
+   
+      <div class="input-group">
+        <div class="input-group-prepend" style="align-items:center;">
+          <span class="input-group-text" align="center" id="school">Class</span>
+    </div>
+   <input type="text" class="form-control" size="50" placeholder="Email" required>
+   </div>
+
+<div class="col-lg-4 col-lg-offset-4">
+ <span text-align= "left" class="input-group-text" id="">Year</span>
+</div>
+
+   <div class="col-lg-4 col-lg-offset-4">
+     <button type="button" class="btn btn-primary btn-lg">        Lower (1st,2nd Year)        </button>
+     <button type="button" class="btn btn-primary btn-lg">        Upper (3rd Year+)        </button>
+   </div>
+
+    <!--Class-->
+    <div class="col-lg-4 col-lg-offset-4">
+      <div class="input-group">
+        <div class="input-group-prepend" style="display: inherit;">
+          <span class="input-group-text" id="">Class</span>
+        </div>
+        <div class="search-box-and-button" style="display: flex;">
+              <input style="min-width: 26vw;"type="class" class="form-control" placeholder="Class" required>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Search</button>
+              </div>
+         </div>
+      
       </div>
     </div>
 
 
   </div>
   </form>
-</div>
+    <!--Year-->
+     
+
+ <span text-align= "left" class="input-group-text" id="">Year</span>
+<br>
+
+   
+     <button type="button" class="btn btn-primary btn-lg">        Lower (1st,2nd Year)        </button>
+<br>
+     <button type="button" class="btn btn-primary btn-lg">        Upper (3rd Year+)        </button>
+   
+
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
@@ -338,26 +446,16 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");

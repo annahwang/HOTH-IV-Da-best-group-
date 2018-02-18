@@ -1,3 +1,17 @@
-.searchBar{
+/*.searchBar{
   width: 500px;
+}
+
+.jumbotron text-center {
+  background: red;
+}
+
+.fun {
+  background-color: blue;
+}*/
+
+.flexing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
